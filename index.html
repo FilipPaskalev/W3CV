@@ -4,14 +4,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV template</title>
+    <title>Filip Paskalev CV</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--Montserrat font-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   </head>
   <body>   
     <section>
@@ -29,14 +30,11 @@
       <!-- SOCIAL SECTION -->
       <section class="image-section w3-quarter w3-fixed w3-padding-small">
         <!--IMAGE/AVATAR-->
-        <img src="avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <img src="assets/avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
         <!--SOCIAL NETWORK BUTTONS-->
         <div class="links w3-margin-top w3-padding-small">
           <a class="icon-link w3-text-sand w3-hover-text-amber" href="#facebook" target="_blank">
               <i data-feather="facebook"></i>
-          </a>
-          <a class="icon-link w3-text-sand w3-hover-text-amber" href="#instagram" target="_blank">
-             <i data-feather="instagram"></i>
           </a>
           <a class="icon-link w3-text-sand w3-hover-text-amber" href="#twitter" target="_blank">
              <i data-feather="twitter"></i>
@@ -47,7 +45,7 @@
         </div>
         <!--CV DOWNLOAD BUTTON-->
         <div class="w3-container w3-padding-16">
-          <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
+          <a href="resume/resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
             <i data-feather="arrow-down" style="vertical-align: -0.35em;"></i>
             <span class="w3-margin-left download-text">DOWNLOAD CV</span>
           </a>
@@ -67,8 +65,8 @@
           <!--HOME SECTION-->
           <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
             <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p>
-            <h1>John Doe (35)</h2>
-            <h2>Community manager</h3>
+            <h2></h2>
+            <h2></h2>
             <p></p>
           </div>
 
@@ -194,17 +192,17 @@
           <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
             <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
             <div class="w3-margin-top-2" style="font-weight: 500;">
-              <p>Name: John Doe</p>
-              <p>Address: Street name 99, 77001 Houston, Texas</p>
-              <p>Phone number: +0123456789</p>
-              <p>E-mail: johndoe@email.com</p>
+              <p id="contactName">Name: </p>
+              <p id="contactAddress">Address: </p>
+              <p id="contactPhoneNumber">Phone number: </p>
+              <p id="contactEmail">E-mail: </p>
             </div>
           </div>
 
         <!--FOOTER-->
         <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
         <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
-          <p>© 2021 - John Doe</p>
+          <p id="footerNameMark">© 2021 - </p>
            <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
           <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> 
         <!-- End footer -->
@@ -213,6 +211,7 @@
         <!--END OF CV SECTION-->
       </section>      
     </section>
+    <script src="bundle.js"></script>
     <script>
       // Function to toggle mobile navigation
       function toggleNavigation() {

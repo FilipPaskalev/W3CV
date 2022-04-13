@@ -1,0 +1,2 @@
+export const SUMMARY_CONTENT: string =
+  'А recent graduate of MSc Advanced Computer Science at Birmingham City University. I am a person with an "I can" attitude who can bring things to an end. Quickly adapting to the environment and circumstances, I become an essential part of the team. If you are looking for someone who has attention to detail and strong problem-solving skills, do not hesitate to contact me at the listed contacts.'
