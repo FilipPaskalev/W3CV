@@ -4,17 +4,17 @@ import IDegree from '../interfaces/iDegree';
 export namespace DETAILS {
   export const PERSONAL = {
     NAME: {
-      FIRST: 'Filip',
-      FAMILY: 'Paskalev'
+      FIRST: 'FIRSTNAME',
+      FAMILY: 'SECONDNAME'
     },
-    PHONE_NUMBER: '+44 7882 156 424',
+    PHONE_NUMBER: '+44 1234 567 899',
     EMAIL: 'paskalevfilip@gmail.com',
     ADDRESS: {
-      STREET: '2 Campion Gardens',
+      STREET: 'STREETNAME',
       TOWN: 'Birmingham',
-      POSTCODE: 'B24 0HF'
+      POSTCODE: 'POSTCODE'
     },
-    AGE: 36,
+    AGE: 'AGE',
     PROFESSION: 'Software developer'
   };
 
